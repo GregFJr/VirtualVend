@@ -36,6 +36,8 @@ VirtualVend provides businesses with a robust back-end infrastructure, allowing 
 
 5. **API Testing**: Use software like Insomnia or Postman to test API endpoints.
 
+## Walkthrough Video
+[Virtual Vend Walkthrough Video](https://watch.screencastify.com/v/xIqIavYAsqPPk3ReSYbH)
 
 ## License
 
