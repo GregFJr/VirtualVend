@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-
+//get all categories
 router.get('/', async (req, res) => {
   try {
     const categories = await Category.findAll({
@@ -13,6 +13,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// get one category
 router.get('/:id', async (req, res) => {
   try {
     const category = await Category.findByPk(req.params.id, {
@@ -30,6 +31,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+// create new category
 router.post('/', async (req, res) => {
   try {
     const newCategory = await Category.create(req.body);
@@ -39,6 +41,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// update category
 router.put('/:id', async (req, res) => {
   try {
     const updatedCategory = await Category.update(req.body, {
@@ -58,6 +61,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// delete category
 router.delete('/:id', async (req, res) => {
   try {
     const categoryData = await Category.destroy({
